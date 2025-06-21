@@ -6,6 +6,14 @@
   <title>Go Climb | Harshid Gasil</title>
   <link rel="stylesheet" href="../code/style.css" />
   <script src="../code/theme-toggle.js" defer></script>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    })();
+  </script>
   <style>
     header.go-header {
       display: flex;

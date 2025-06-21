@@ -1,12 +1,3 @@
-:root {
-    --bg: #ffffff;
-    --fg: #000000;
-    --section-bg: #f0f0f0;
-    --card-bg: #e0e0e0;
-    --link-color: #007acc;
-    --footer-bg: #ddd;
-}
-
 @media (prefers-color-scheme: light) {
     :root {
         --bg: #1e1e1e;

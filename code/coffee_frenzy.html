@@ -1,106 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coffee Frenzy | Harshid Gasil</title>
-  <link rel="stylesheet" href="../code/style.css" />
-  <script src="../code/theme-toggle.js" defer></script>
-  <style>
-    header.coffee-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin: 40px auto 20px;
-      max-width: 700px;
-      flex-wrap: wrap;
-      border-radius: 12px;
-      background-color: var(--section-bg);
-      padding: 20px;
-    }
-    .coffee-header img {
-      width: 80px;
-      height: 80px;
-      border-radius: 12px;
-    }
-    .coffee-header .header-text {
-      display: flex;
-      flex-direction: column;
-    }
-    .coffee-header h1 {
-      margin: 0;
-    }
-    .screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .screenshots img {
-      max-width: 300px;
-      border-radius: 8px;
-    }
-  </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Coffee Frenzy | Harshid Gasil</title>
+    <link rel="stylesheet" href="../code/style.css"/>
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        })();
+    </script>
+    <script src="../code/theme-toggle.js" defer></script>
+    <style>
+        header.coffee-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 40px auto 20px;
+            max-width: 700px;
+            flex-wrap: wrap;
+            border-radius: 12px;
+            background-color: var(--section-bg);
+            padding: 20px;
+        }
+
+        .coffee-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+        }
+
+        .coffee-header .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .coffee-header h1 {
+            margin: 0;
+        }
+
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .screenshots img {
+            max-width: 300px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
 <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 <header class="coffee-header">
-  <img src="../images/coffee_frenzy.webp" alt="Coffee Frenzy Icon" />
-  <div class="header-text">
-    <h1>Coffee Frenzy</h1>
-    <p>Serve perfect cups of coffee under pressure in this fast-paced game</p>
-  </div>
+    <img src="../images/coffee_frenzy.webp" alt="Coffee Frenzy Icon"/>
+    <div class="header-text">
+        <h1>Coffee Frenzy</h1>
+        <p>Serve perfect cups of coffee under pressure in this fast-paced game</p>
+    </div>
 </header>
 
 <div class="container">
-  <div class="section">
-    <h2>Overview</h2>
-    <p>
-      Coffee Frenzy is a vibrant and engaging mobile game where you serve coffee orders to impatient customers. From managing foam levels to perfect pour timing, it’s all about fast reflexes and satisfying visuals. I worked on gameplay systems, particle polish, and order validation mechanics.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Fast-paced coffee serving mechanics</li>
-      <li>Visual feedback with foam and steam</li>
-      <li>Customer expressions and animations</li>
-      <li>Time management gameplay</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Screenshots</h2>
-    <div class="screenshots">
-      <img src="../images/coffee_1.webp" alt="Coffee Frenzy Gameplay 1" />
-      <img src="../images/coffee_2.webp" alt="Coffee Frenzy Gameplay 2" />
+    <div class="section">
+        <h2>Overview</h2>
+        <p>
+            Coffee Frenzy is a vibrant and engaging mobile game where you serve coffee orders to impatient customers.
+            From managing foam levels to perfect pour timing, it’s all about fast reflexes and satisfying visuals. I
+            worked on gameplay systems, particle polish, and order validation mechanics.
+        </p>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Tools & Technologies</h2>
-    <ul>
-      <li>Unity (C#)</li>
-      <li>Particle System for foam and steam</li>
-      <li>Mobile UI & Interaction Design</li>
-    </ul>
-  </div>
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Fast-paced coffee serving mechanics</li>
+            <li>Visual feedback with foam and steam</li>
+            <li>Customer expressions and animations</li>
+            <li>Time management gameplay</li>
+        </ul>
+    </div>
 
-  <div class="section">
-    <h2>Try It or Learn More</h2>
-    <p>
-      You can find the game on <a href="https://play.google.com/store/apps/details?id=com.thesunday.coffeefrenzy" target="_blank">Google Play</a>, or contact me at <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>.
-    </p>
-  </div>
+    <div class="section">
+        <h2>Screenshots</h2>
+        <div class="screenshots">
+            <img src="../images/coffee_1.webp" alt="Coffee Frenzy Gameplay 1"/>
+            <img src="../images/coffee_2.webp" alt="Coffee Frenzy Gameplay 2"/>
+        </div>
+    </div>
 
-  <div class="section">
-    <p><a href="../index.html">&larr; Back to Portfolio</a></p>
-  </div>
+    <div class="section">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Particle System for foam and steam</li>
+            <li>Mobile UI & Interaction Design</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Try It or Learn More</h2>
+        <p>
+            You can find the game on <a href="https://play.google.com/store/apps/details?id=com.thesunday.coffeefrenzy"
+                                        target="_blank">Google Play</a>, or contact me at <a
+                href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>.
+        </p>
+    </div>
+
+    <div class="section">
+        <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
 </div>
 
 <footer>
-  <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
 </footer>
 </body>
 </html>
