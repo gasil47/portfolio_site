@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tangled Heist | Harshid Gasil</title>
+  <link rel="stylesheet" href="../code/style.css" />
+  <script src="../code/theme-toggle.js" defer></script>
+  <style>
+    header.heist-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 40px auto 20px;
+      max-width: 700px;
+      flex-wrap: wrap;
+      border-radius: 12px;
+      background-color: var(--section-bg);
+      padding: 20px;
+    }
+    .heist-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+    }
+    .heist-header .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .heist-header h1 {
+      margin: 0;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .screenshots img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+<header class="heist-header">
+  <img src="../images/tangled_heist.webp" alt="Tangled Heist Icon" />
+  <div class="header-text">
+    <h1>Tangled Heist</h1>
+    <p>A strategic line-drawing game with stealth mechanics and puzzle-solving</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="section">
+    <h2>Overview</h2>
+    <p>
+      Tangled Heist challenges players to guide a group of thieves through secure paths while avoiding alarms and guards. I designed line-drawing mechanics, AI movement logic, and helped fine-tune the path collision detection systems.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Drag-and-plan movement mechanics</li>
+      <li>AI enemies and guard patterns</li>
+      <li>Dynamic collision and alert zones</li>
+      <li>Multiple mission levels with increasing difficulty</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots</h2>
+    <div class="screenshots">
+      <img src="../images/heist_1.webp" alt="Tangled Heist Gameplay 1" />
+      <img src="../images/heist_2.webp" alt="Tangled Heist Gameplay 2" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Tools & Technologies</h2>
+    <ul>
+      <li>Unity (C#)</li>
+      <li>Line Renderer & Raycasting</li>
+      <li>AI Navigation & Path Detection</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Try It or Learn More</h2>
+    <p>
+      You can find Tangled Heist on <a href="https://play.google.com/store/apps/details?id=com.thesunday.tangledheist" target="_blank">Google Play</a>, or contact me at <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>.
+    </p>
+  </div>
+
+  <div class="section">
+    <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+</footer>
+</body>
+</html>

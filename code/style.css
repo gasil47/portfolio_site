@@ -1,0 +1,123 @@
+:root {
+    --bg: #ffffff;
+    --fg: #000000;
+    --section-bg: #f0f0f0;
+    --card-bg: #e0e0e0;
+    --link-color: #007acc;
+    --footer-bg: #ddd;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #1e1e1e;
+        --fg: #f0f0f0;
+        --section-bg: #2a2a2a;
+        --card-bg: #1f1f1f;
+        --link-color: #00c3ff;
+        --footer-bg: #2c2c2c;
+    }
+}
+
+[data-theme="dark"] {
+    --bg: #1e1e1e;
+    --fg: #f0f0f0;
+    --section-bg: #2a2a2a;
+    --card-bg: #1f1f1f;
+    --link-color: #00c3ff;
+    --footer-bg: #2c2c2c;
+}
+
+[data-theme="light"] {
+    --bg: #ffffff;
+    --fg: #000000;
+    --section-bg: #f0f0f0;
+    --card-bg: #e0e0e0;
+    --link-color: #007acc;
+    --footer-bg: #ddd;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+header {
+    background-color: var(--footer-bg);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.game {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.game img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--footer-bg);
+    color: var(--fg);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--section-bg);
+    color: var(--fg);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}

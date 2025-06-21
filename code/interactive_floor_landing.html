@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Floor Mapping | Harshid Gasil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: #2c2c2c;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .section {
+      background-color: #2a2a2a;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: #00c3ff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #2c2c2c;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interactive Floor Mapping</h1>
+    <p>Real-time touch-sensitive visual feedback using TouchDesigner</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Overview</h2>
+      <p>This TouchDesigner-based application transforms a floor projection area into a dynamic interactive experience. Using a camera feed and spatial mapping, users can interact with zones on the floor that change visuals based on motion, gestures, and timing logic. Designed for exhibitions, games, or interactive installations.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Safe zone calibration and real-time feedback</li>
+        <li>Motion-triggered animations and color changes</li>
+        <li>Snake-tile mechanics with game logic</li>
+        <li>No text UI — interaction purely through visuals</li>
+        <li>Custom shaders and color logic using GLSL/TouchDesigner nodes</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <img src="floor_1.webp" alt="Safe Zone Setup">
+        <img src="floor_2.webp" alt="Game Area Visuals">
+        <img src="floor_3.webp" alt="Player Movement Overlay">
+        <img src="floor_4.webp" alt="Real-time Tile Response">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Tools & Technologies</h2>
+      <ul>
+        <li>TouchDesigner</li>
+        <li>GLSL</li>
+        <li>Webcam/Depth camera input</li>
+        <li>Real-time rendering pipeline</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Interested?</h2>
+      <p>Looking to implement interactive floors for your event or space? Contact me at <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+  </footer>
+</body>
+</html>

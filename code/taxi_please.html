@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxi Please | Harshid Gasil</title>
+  <link rel="stylesheet" href="../code/style.css" />
+  <script src="../code/theme-toggle.js" defer></script>
+  <style>
+    header.taxi-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 40px auto 20px;
+      max-width: 700px;
+      flex-wrap: wrap;
+      border-radius: 12px;
+      background-color: var(--section-bg);
+      padding: 20px;
+    }
+    .taxi-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+    }
+    .taxi-header .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .taxi-header h1 {
+      margin: 0;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .screenshots img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+<header class="taxi-header">
+  <img src="../images/taxi_please.webp" alt="Taxi Please Icon" />
+  <div class="header-text">
+    <h1>Taxi Please</h1>
+    <p>A casual ride-hailing simulation with quirky characters and vibrant cityscapes</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="section">
+    <h2>Overview</h2>
+    <p>
+      In Taxi Please, players navigate city streets to pick up and drop off passengers while dealing with traffic and time constraints. I implemented the character spawning, cab controls, and interaction system between rider and driver.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Key Features</h2>
+    <ul>
+      <li>One-tap control and responsive UI</li>
+      <li>Humorous passenger animations</li>
+      <li>City navigation and parking mechanics</li>
+      <li>Level progression system</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots</h2>
+    <div class="screenshots">
+      <img src="../images/taxi_1.webp" alt="Taxi Please Gameplay 1" />
+      <img src="../images/taxi_2.webp" alt="Taxi Please Gameplay 2" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Tools & Technologies</h2>
+    <ul>
+      <li>Unity (C#)</li>
+      <li>NavMesh Pathfinding</li>
+      <li>Mobile Input Controller</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Try It or Learn More</h2>
+    <p>
+      View Taxi Please on <a href="https://play.google.com/store/apps/details?id=com.tttgames.taxiplease" target="_blank">Google Play</a>, or email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a> for more info.
+    </p>
+  </div>
+
+  <div class="section">
+    <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+</footer>
+</body>
+</html>

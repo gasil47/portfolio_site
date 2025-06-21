@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Mania | Harshid Gasil</title>
+  <link rel="stylesheet" href="../code/style.css" />
+  <script src="../code/theme-toggle.js" defer></script>
+  <style>
+    header.bus-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 40px auto 20px;
+      max-width: 700px;
+      flex-wrap: wrap;
+      border-radius: 12px;
+      background-color: var(--section-bg);
+      padding: 20px;
+    }
+    .bus-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+    }
+    .bus-header .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .bus-header h1 {
+      margin: 0;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .screenshots img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+<header class="bus-header">
+  <img src="../images/bus_mania.webp" alt="Bus Mania Icon" />
+  <div class="header-text">
+    <h1>Bus Mania</h1>
+    <p>A traffic control and passenger pickup game for Android</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="section">
+    <h2>Overview</h2>
+    <p>In Bus Mania, players manage a fleet of buses in a busy city and ensure they pick up passengers on time without collisions. I implemented the bus AI logic, route optimization, and UI for trip management.</p>
+  </div>
+
+  <div class="section">
+    <h2>Key Features</h2>
+    <ul>
+      <li>City-wide routing and scheduling system</li>
+      <li>Color-coded bus line identification</li>
+      <li>Interactive UI with dynamic updates</li>
+      <li>Multiple map levels and unlockables</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots</h2>
+    <div class="screenshots">
+      <img src="../images/bus_1.webp" alt="Bus Mania Gameplay 1" />
+      <img src="../images/bus_2.webp" alt="Bus Mania Gameplay 2" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Tools & Technologies</h2>
+    <ul>
+      <li>Unity (C#)</li>
+      <li>Pathfinding Algorithms</li>
+      <li>2D Tilemap System</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Try It or Learn More</h2>
+    <p>Check it out on <a href="https://www.sellmyapp.com/downloads/bus-mania/" target="_blank">SellMyApp</a> or email me at <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a> for questions.</p>
+  </div>
+
+  <div class="section">
+    <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+</footer>
+</body>
+</html>
