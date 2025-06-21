@@ -79,12 +79,13 @@ header h1 {
 
 .game {
     background-color: var(--card-bg);
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 12px;
+    padding: 3px;
     text-align: center;
 }
 
 .game img {
+    margin-top: 15px;
     width: 100%;
     max-width: 150px;
     height: auto;
