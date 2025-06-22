@@ -6,14 +6,24 @@
     <title>KUKA Robot Sync Tool | Harshid Gasil</title>
     <link rel="stylesheet" href="style.css">
     <script src="theme-toggle.js" defer></script>
+    <style>
+      
+        .kuka-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+        }
+    </style>
 </head>
 <body>
 <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-<header>
+<header class="kuka-header">
+    <img src="../images/kuka1.png" alt="kuka Icon">
+    <div class="header-text">
     <h1>KUKA Robot Sync Tool</h1>
     <p>Real-time communication between Unity and KUKA KR210 R2700</p>
+    </div>
 </header>
-
 <div class="container">
     <div class="section">
         <h2>Overview</h2>
@@ -38,7 +48,6 @@
     <div class="section screenshots-section">
         <h2>Screenshots</h2>
         <div class="section screenshots-section">
-            <h2>UI Screenshots</h2>
             <div class="screenshot-scroll-wrapper">
                 <div class="screenshot-scroll" id="screenshotContainer">
                     <img src="../images/kuka/unitymodel.png" alt="Unity UI - Control Panel">
