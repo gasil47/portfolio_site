@@ -6,6 +6,8 @@
         --card-bg: #e0e0e0;
         --link-color: #007acc;
         --footer-bg: #ddd;
+        --scroll-thumb: rgba(0, 0, 0, 0.4);
+        --scroll-track: rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -16,6 +18,8 @@
     --card-bg: #1f1f1f;
     --link-color: #00c3ff;
     --footer-bg: #2c2c2c;
+    --scroll-thumb: rgba(255, 255, 255, 0.5);
+    --scroll-track: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="light"] {
@@ -25,6 +29,8 @@
     --card-bg: #e0e0e0;
     --link-color: #007acc;
     --footer-bg: #ddd;
+    --scroll-thumb: rgba(0, 0, 0, 0.4);
+    --scroll-track: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -113,6 +119,8 @@ a {
     cursor: pointer;
     font-weight: bold;
 }
+
+/* Screenshot Scroll Area */
 .screenshot-scroll {
     display: flex;
     overflow-x: auto;
@@ -134,11 +142,31 @@ a {
 .screenshot-scroll img:hover {
     transform: scale(1.03);
 }
-.screenshot-scroll::-webkit-scrollbar {
-    display: none;
-}
-.screenshot-scroll {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+/* Scrollbar Styling - WebKit (Chrome, Edge, Safari) */
+.screenshot-scroll-wrapper::-webkit-scrollbar {
+    height: 10px;
+    background: transparent;
 }
 
+.screenshot-scroll-wrapper::-webkit-scrollbar-track {
+    background: var(--scroll-track);
+    border-radius: 10px;
+}
+
+.screenshot-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb);
+    border-radius: 10px;
+}
+
+.screenshot-scroll-wrapper::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Firefox scrollbar */
+.screenshot-scroll-wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+    overflow-x: auto;
+    padding: 10px 0;
+}

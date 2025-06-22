@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KUKA Robot Sync Tool | Harshid Gasil</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="theme-toggle.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUKA Robot Sync Tool | Harshid Gasil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="theme-toggle.js" defer></script>
 </head>
 <body>
 <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 <header>
-  <h1>KUKA Robot Sync Tool</h1>
-  <p>Real-time communication between Unity and KUKA KR210 R2700</p>
+    <h1>KUKA Robot Sync Tool</h1>
+    <p>Real-time communication between Unity and KUKA KR210 R2700</p>
 </header>
 
 <div class="container">
-  <div class="section">
-    <h2>Overview</h2>
-    <p>This Unity-based application establishes a real-time link between a procedural digital twin and a physical KUKA KR210 R2700 robot using the C3 Bridge protocol. It supports bi-directional streaming of joint and end-effector data, allowing live synchronization and control of robotic movements through Unity’s interface.</p>
-  </div>
-
-  <div class="section">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Live joint control and visualization from Unity</li>
-      <li>Real-time feedback from robot to Unity</li>
-      <li>Support for both E6AXIS and E6POS structures</li>
-      <li>Built-in TCP/IP communication with C3 Bridge protocol</li>
-      <li>Custom slider-based and IK-based controls</li>
-      <li>Visual Gizmo overlays for TCP pose</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Screenshots</h2>
-    <div class="screenshot-scroll">
-      <img src="../images/kuka/unitymodel.png" alt="Unity UI - Control Panel">
-      <img src="../images/kuka/teachpad1.jpg" alt="Teach Pendant 1">
-      <img src="../images/kuka/teachpad2.jpg" alt="Teach Pendant 2">
-      <img src="../images/kuka/teachpad3.jpg" alt="Teach Pendant 3">
+    <div class="section">
+        <h2>Overview</h2>
+        <p>This Unity-based application establishes a real-time link between a procedural digital twin and a physical
+            KUKA KR210 R2700 robot using the C3 Bridge protocol. It supports bi-directional streaming of joint and
+            end-effector data, allowing live synchronization and control of robotic movements through Unity’s
+            interface.</p>
     </div>
-  </div>
 
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Live joint control and visualization from Unity</li>
+            <li>Real-time feedback from robot to Unity</li>
+            <li>Support for both E6AXIS and E6POS structures</li>
+            <li>Built-in TCP/IP communication with C3 Bridge protocol</li>
+            <li>Custom slider-based and IK-based controls</li>
+            <li>Visual Gizmo overlays for TCP pose</li>
+        </ul>
+    </div>
 
-  <div class="section">
-    <h2>Tools & Technologies</h2>
-    <ul>
-      <li>Unity (C#)</li>
-      <li>KUKA C3 Bridge Protocol</li>
-      <li>OpenKUKA KukavarClient (initial test)</li>
-      <li>Ubuntu/Windows</li>
-    </ul>
-  </div>
+    <div class="section screenshots-section">
+        <h2>Screenshots</h2>
+        <div class="section screenshots-section">
+            <h2>UI Screenshots</h2>
+            <div class="screenshot-scroll-wrapper">
+                <div class="screenshot-scroll" id="screenshotContainer">
+                    <img src="../images/kuka/unitymodel.png" alt="Unity UI - Control Panel">
+                    <img src="../images/kuka/teachpad1.jpg" alt="Teach Pad 1">
+                    <img src="../images/kuka/teachpad2.jpg" alt="Teach Pad 2">
+                    <img src="../images/kuka/teachpad3.jpg" alt="Teach Pad 3">
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <div class="section">
-    <h2>Try It or Learn More</h2>
-    <p>Interested in collaborating or learning more? Reach out at <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>.</p>
-    <p><a href="../index.html">&larr; Back to Portfolio</a></p>
-  </div>
+    <div class="section">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>KUKA C3 Bridge Protocol</li>
+            <li>OpenKUKA KukavarClient (initial test)</li>
+            <li>Ubuntu/Windows</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Try It or Learn More</h2>
+        <p>Interested in collaborating or learning more? Reach out at <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>.
+        </p>
+        <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
 </div>
 
 <footer>
-  <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
 </footer>
+
+<script>
+    function scrollScreenshots(direction) {
+        const container = document.getElementById("screenshotContainer");
+        const scrollAmount = container.offsetWidth / 2;
+        container.scrollBy({left: direction * scrollAmount, behavior: 'smooth'});
+    }
+</script>
 </body>
 </html>
