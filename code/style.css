@@ -170,3 +170,41 @@ a {
     overflow-x: auto;
     padding: 10px 0;
 }
+.game:hover, .app:hover {
+    background-color: #333333;
+    transform: translateY(-4px);
+    transition: all 0.2s ease-in-out;
+}
+/* Unified accent color (inherits from --link-color) */
+a, .game a, .app a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover, .game a:hover, .app a:hover {
+    text-decoration: underline;
+}
+
+/* App/Game card hover effect */
+.game, .app {
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.game:hover, .app:hover {
+    background-color: rgba(255, 255, 255, 0.05); /* Light overlay on dark */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: subtle inner shadow for depth */
+.section {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Tile Image hover slight zoom */
+.game img:hover, .app img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
