@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinetic LED Control | Harshid Gasil</title>
+  <link rel="stylesheet" href="../code/style.css" />
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    })();
+  </script>
+  <script src="../code/theme-toggle.js" defer></script>
+  <style>
+    header.led-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 40px auto 20px;
+      max-width: 700px;
+      flex-wrap: wrap;
+      border-radius: 12px;
+      background-color: var(--section-bg);
+      padding: 20px;
+    }
+    .led-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+    }
+    .led-header .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .led-header h1 {
+      margin: 0;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .screenshots img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <header class="led-header">
+    <img src="../images/kinetic_led_display.png" alt="Kinetic LED Icon" />
+    <div class="header-text">
+      <h1>Kinetic LED Control</h1>
+      <p>Unity-based multi-device control system for kinetic LED displays</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Overview</h2>
+      <p>
+        This Unity-powered system enables synchronized control of kinetic LED display movements and visuals using a multi-device architecture. One instance can run on a tablet, allowing users to interact with visual controls, while another Unity instance communicates directly with the kinetic LED display hardware.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Real-time device-to-device data sync</li>
+        <li>Interactive tablet UI for controlling visuals</li>
+        <li>Custom Unity TCP/UDP communication layer</li>
+        <li>Supports various kinetic LED hardware protocols</li>
+        <li>Responsive and intuitive user feedback loop</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <video src="../Videos/video 1.mp4" controls width="300"></video>
+        <video src="../Videos/video 2.mp4" controls width="300"></video>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Tools & Technologies</h2>
+      <ul>
+        <li>Unity (C#)</li>
+        <li>Custom TCP Communication Module</li>
+        <li>Tablet Touch Interface Design</li>
+        <li>Real-time Data Synchronization</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Want to Collaborate?</h2>
+      <p>
+        Reach out to <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a> if you're interested in real-time LED control systems, interactive installations, or Unity-based hardware interfaces.
+      </p>
+    </div>
+
+    <div class="section">
+      <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+  </footer>
+</body>
+</html>
