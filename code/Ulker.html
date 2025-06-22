@@ -1,196 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ülker Ramadan Dessert Creator | Harshid Gasil</title>
-  <link rel="stylesheet" href="../code/style.css" />
-  <script src="../code/theme-toggle.js" defer></script>
-  <style>
-    header.ulker-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin: 40px auto 20px;
-      max-width: 700px;
-      flex-wrap: wrap;
-      border-radius: 12px;
-      background-color: var(--section-bg);
-      padding: 20px;
-    }
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ülker Ramadan Dessert Creator | Harshid Gasil</title>
+    <link rel="stylesheet" href="../code/style.css"/>
+    <script src="../code/theme-toggle.js" defer></script>
+    <style>
+        header.ulker-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 40px auto 20px;
+            max-width: 700px;
+            flex-wrap: wrap;
+            border-radius: 12px;
+            background-color: var(--section-bg);
+            padding: 20px;
+        }
 
-    .ulker-header img {
-      width: 80px;
-      height: 80px;
-      border-radius: 12px;
-    }
+        .ulker-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+        }
 
-    .ulker-header .header-text {
-      display: flex;
-      flex-direction: column;
-    }
+        .ulker-header .header-text {
+            display: flex;
+            flex-direction: column;
+        }
 
-    .ulker-header h1 {
-      margin: 0;
-    }
+        .ulker-header h1 {
+            margin: 0;
+        }
 
-    .carousel {
-      position: relative;
-      max-width: 800px;
-      margin: 20px auto;
-      overflow: hidden;
-      border-radius: 10px;
-      height: 520px;
-    }
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 520px;
+        }
 
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease;
-      height: 100%;
-    }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
 
-    .carousel-slide {
-      flex: 0 0 33.33%; /* Show 3 slides at once */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-    }
+        .carousel-slide {
+            flex: 0 0 33.33%; /* Show 3 slides at once */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
 
-    .carousel-slide img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
 
-    .carousel-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0,0,0,0.4);
-      border: none;
-      color: white;
-      font-size: 2rem;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 1;
-    }
-    .video-section video {
-      max-width: 20%;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-    .video-section {
-      text-align: center;
-    }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.4);
+            border: none;
+            color: white;
+            font-size: 2rem;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
 
-    .carousel-button.prev { left: 10px; }
-    .carousel-button.next { right: 10px; }
-  </style>
+        .video-section video {
+            max-width: 50%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .video-section {
+            text-align: center;
+        }
+
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        .carousel-button.next {
+            right: 10px;
+        }
+    </style>
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 
-  <header class="ulker-header">
+<header class="ulker-header">
     <img src="../images/ulker/logo.jpg" alt="Ülker Icon">
     <div class="header-text">
-      <h1>Ülker Ramadan Dessert Creator</h1>
-      <p>Unity app powered by Stable Diffusion for generating custom desserts</p>
+        <h1>Ülker Ramadan Dessert Creator</h1>
+        <p>Unity app powered by Stable Diffusion for generating custom desserts</p>
     </div>
-  </header>
+</header>
 
-  <div class="container">
+<div class="container">
     <div class="section">
-      <h2>Overview</h2>
-      <p>This Unity-based app was built for Ülker’s Ramadan campaign. It allows users to create dessert combinations and uses locally running Stable Diffusion to generate realistic outputs based on selected ingredients. Designed for kids and families during Iftar activations.</p>
-    </div>
-
-    <div class="section">
-      <h2>Key Features</h2>
-      <ul>
-        <li>AI image generation via Stable Diffusion</li>
-        <li>Interactive dessert builder</li>
-        <li>Arabic & English support</li>
-        <li>Print/share generated images via QR</li>
-        <li>Mobile-friendly UI with feedback system</li>
-      </ul>
+        <h2>Overview</h2>
+        <p>This Unity-based app was built for Ülker’s Ramadan campaign. It allows users to create dessert combinations
+            and uses locally running Stable Diffusion to generate realistic outputs based on selected ingredients.
+            Designed for kids and families during Iftar activations.</p>
     </div>
 
     <div class="section">
-      <h2>UI Screenshots</h2>
-      <div class="carousel">
-        <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
-        <div class="carousel-track" id="carouselTrack">
-          <div class="carousel-slide"><img src="../images/ulker/1.png" alt="Page 1" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/2.png" alt="Page 2" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/3.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/4.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/5.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/6.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/7.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/8.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/9.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/10.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/11.png" alt="Page 3" /></div>
-          <div class="carousel-slide"><img src="../images/ulker/12.png" alt="Page 3" /></div>
+        <h2>Key Features</h2>
+        <ul>
+            <li>AI image generation via Stable Diffusion</li>
+            <li>Interactive dessert builder</li>
+            <li>Arabic & English support</li>
+            <li>Print/share generated images via QR</li>
+            <li>Mobile-friendly UI with feedback system</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>UI Screenshots</h2>
+        <div class="carousel">
+            <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
+            <div class="screenshot-scroll">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide"><img src="../images/ulker/1.png" alt="Page 1"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/2.png" alt="Page 2"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/3.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/4.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/5.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/6.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/7.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/8.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/9.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/10.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/11.png" alt="Page 3"/></div>
+                    <div class="carousel-slide"><img src="../images/ulker/12.png" alt="Page 3"/></div>
+                </div>
+                <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
+            </div>
         </div>
-        <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
-      </div>
     </div>
 
     <div class="section video-section">
-      <h2>Demo Video</h2>
-      <video src="../Videos/ulker.mp4" controls poster="../images/ulker/1.png"></video>
+        <h2>Demo Video</h2>
+        <video src="../Videos/ulker.mp4" controls poster="../images/ulker/1.png"></video>
     </div>
 
 
     <div class="section">
-      <h2>Tools & Technologies</h2>
-      <ul>
-        <li>Unity (C#)</li>
-        <li>Stable Diffusion (local inference)</li>
-        <li>Custom UI & animation flow</li>
-        <li>QR Generator Plugin</li>
-      </ul>
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Stable Diffusion (local inference)</li>
+            <li>Custom UI & animation flow</li>
+            <li>QR Generator Plugin</li>
+        </ul>
     </div>
 
     <div class="section">
-      <h2>Contact</h2>
-      <p>Want to discuss this project or something similar? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a></p>
-      <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+        <h2>Contact</h2>
+        <p>Want to discuss this project or something similar? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>
+        </p>
+        <p><a href="../index.html">&larr; Back to Portfolio</a></p>
     </div>
-  </div>
+</div>
 
-  <footer>
+<footer>
     <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
-  </footer>
+</footer>
 
-  <script>
+<script>
     let currentSlide = 0;
+
     function moveSlide(step) {
-      const track = document.getElementById('carouselTrack');
-      const slides = document.querySelectorAll('.carousel-slide');
-      currentSlide = (currentSlide + step + slides.length) % slides.length;
-      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        const track = document.getElementById('carouselTrack');
+        const slides = document.querySelectorAll('.carousel-slide');
+        currentSlide = (currentSlide + step + slides.length) % slides.length;
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
     }
-  </script>
+</script>
 </body>
 </html>
 <script>
-  let currentIndex = 0;
-  const slidesToShow = 3;
+    let currentIndex = 0;
+    const slidesToShow = 3;
 
-  function moveSlide(step) {
-    const track = document.getElementById("carouselTrack");
-    const slides = document.querySelectorAll(".carousel-slide");
-    const totalSlides = slides.length;
+    function moveSlide(step) {
+        const track = document.getElementById("carouselTrack");
+        const slides = document.querySelectorAll(".carousel-slide");
+        const totalSlides = slides.length;
 
-    currentIndex = (currentIndex + step + totalSlides) % totalSlides;
-    const offset = (100 / slidesToShow) * currentIndex;
-    track.style.transform = `translateX(-${offset}%)`;
-  }
+        currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+        const offset = (100 / slidesToShow) * currentIndex;
+        track.style.transform = `translateX(-${offset}%)`;
+    }
 </script>
 
