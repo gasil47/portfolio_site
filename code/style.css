@@ -44,6 +44,12 @@ body {
     color: var(--fg);
 }
 
+.click-hint {
+    font-size: 0.8rem;
+    color: var(--title-color);
+    margin-top: 2px;
+}
+
 h1, h2, .game h3 {
     font-weight: 600;
 }

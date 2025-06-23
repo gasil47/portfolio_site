@@ -1,92 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LED Floor Game | Harshid Gasil</title>
-  <link rel="stylesheet" href="../code/style.css" />
-  <script src="../code/theme-toggle.js" defer></script>
-  <style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LED Floor Game | Harshid Gasil</title>
+    <link rel="stylesheet" href="../code/style.css"/>
+    <script src="../code/theme-toggle.js" defer></script>
+    <style>
 
-    .led-header img {
-      width: 80px;
-      height: 80px;
-      border-radius: 12px;
-    }
-    .led-header .header-text {
-      display: flex;
-      flex-direction: column;
-    }
-    .led-header h1 {
-      margin: 0;
-    }
-    .screenshots, .videos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .screenshots img, .videos video {
-      max-width: 300px;
-      border-radius: 8px;
-    }
-  </style>
+        .led-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+        }
+
+        .led-header .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .led-header h1 {
+            margin: 0;
+        }
+
+        .screenshots, .videos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .screenshots img, .videos video {
+            max-width: 300px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-  <header class="led-header">
-    <img src="../images/hyper_grid.webp" alt="LED Floor Game Icon" />
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+<header class="led-header">
+    <img src="../images/hyper_grid.webp" alt="LED Floor Game Icon"/>
     <div class="header-text">
-      <h1>LED Floor Tile Game</h1>
-      <p>Interactive game using a physical LED tile grid controlled via Unity</p>
+        <h1>LED Floor Tile Game</h1>
+        <p>Interactive game using a physical LED tile grid controlled via Unity</p>
     </div>
-  </header>
+</header>
 
-  <div class="container">
+<div class="container">
     <div class="section">
-      <h2>Overview</h2>
-      <p>This application enables gameplay through a real-world LED tile floor where players step on tiles to solve a color puzzle. I built this using Unity with real-time feedback from tile inputs. It supports both demo mode and interactive live play through touch or physical input.</p>
-    </div>
-
-    <div class="section">
-      <h2>Key Features</h2>
-      <ul>
-        <li>Real-time color-based puzzle interaction</li>
-        <li>Supports foot-based inputs on tile grid</li>
-        <li>Dynamic difficulty & safe-zone logic</li>
-        <li>Animated feedback using tile lights</li>
-      </ul>
+        <h2>Overview</h2>
+        <p>This application enables gameplay through a real-world LED tile floor where players step on tiles to solve a
+            color puzzle. I built this using Unity with real-time feedback from tile inputs. It supports both demo mode
+            and interactive live play through touch or physical input.</p>
     </div>
 
     <div class="section">
-      <h2>Demo Videos</h2>
-      <div class="videos">
-        <video src="../videos/floor_game_1.mp4" controls width="300"></video>
-        <video src="../videos/floor_game_2.mp4" controls width="300"></video>
-      </div>
+        <h2>Key Features</h2>
+        <ul>
+            <li>Real-time color-based puzzle interaction</li>
+            <li>Supports foot-based inputs on tile grid</li>
+            <li>Dynamic difficulty & safe-zone logic</li>
+            <li>Animated feedback using tile lights</li>
+        </ul>
     </div>
 
     <div class="section">
-      <h2>Tools & Technologies</h2>
-      <ul>
-        <li>Unity (C#)</li>
-        <li>Custom input simulation & communication layer</li>
-        <li>Real-time tile state visualizer</li>
-      </ul>
+        <h2>Demo Videos</h2>
+        <div class="videos">
+            <video src="../Videos/hypergrid1.mp4" controls width="300"></video>
+            <video src="../Videos/hypergrid3.mp4" controls width="300"></video>
+            <video src="../Videos/hypergrid2.mp4" controls width="300"></video>
+        </div>
     </div>
 
     <div class="section">
-      <h2>Contact</h2>
-      <p>Reach me at <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a> for collaboration or project details.</p>
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Custom input simulation & communication layer</li>
+            <li>Real-time tile state visualizer</li>
+        </ul>
     </div>
 
     <div class="section">
-      <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+        <h2>Contact</h2>
+        <p>Reach me at <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a> for collaboration or project
+            details.</p>
     </div>
-  </div>
 
-  <footer>
+    <div class="section">
+        <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
+</div>
+
+<footer>
     <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
-  </footer>
+</footer>
 </body>
 </html>
