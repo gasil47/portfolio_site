@@ -1,14 +1,14 @@
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     :root {
-        --bg: #ffffff;
-        --fg: #000000;
-        --section-bg: #f0f0f0;
-        --card-bg: #e0e0e0;
-        --link-color: #007acc;
-        --footer-bg: #ddd;
-        --scroll-thumb: rgba(0, 0, 0, 0.4);
-        --scroll-track: rgba(0, 0, 0, 0.1);
-        --title-color: #000000;
+        --bg: #1e1e1e;
+        --fg: #f0f0f0;
+        --section-bg: #2a2a2a;
+        --card-bg: #1f1f1f;
+        --link-color: #00c3ff;
+        --footer-bg: #2c2c2c;
+        --scroll-thumb: rgba(255, 255, 255, 0.5);
+        --scroll-track: rgba(255, 255, 255, 0.1);
+        --title-color: #ffffff;
     }
 }
 
@@ -164,7 +164,7 @@ a {
 }
 
 .theme-switch .slider:before {
-    content: "🌞";
+    content: "🌙";
     position: absolute;
     height: 20px;
     width: 20px;
@@ -183,7 +183,7 @@ a {
 }
 
 .theme-switch input:checked + .slider:before {
-    content: "🌙";
+    content: "🌞";
     transform: translateX(24px);
 }
 

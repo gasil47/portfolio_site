@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VR Flight Simulator | Harshid Gasil</title>
+  <link rel="stylesheet" href="../code/style.css" />
+  <script src="../code/theme-toggle.js" defer></script>
+  <style>
+    .header-icon img {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-text h1 {
+      margin: 0;
+    }
+
+    .screenshot-scroll img {
+      height: 300px;
+      width: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      flex-shrink: 0;
+    }
+
+    .video-section video {
+      max-width: 300px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .video-section {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header class="header-icon">
+    <img src="../images/vr_flight/icon.png" alt="VR Flight Simulator Icon" />
+    <div class="header-text">
+      <h1>VR Flight Simulator</h1>
+      <p>Immersive aerial experience built for Meta Quest 2</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Overview</h2>
+      <p>VR Flight Simulator is an immersive 3D experience developed specifically for Meta Quest 2. Players take control of a virtual aircraft in a fully interactive environment. Designed for intuitive VR controls and smooth physics, the game simulates a real flight cockpit and terrain navigation.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Full VR cockpit with interactable controls</li>
+        <li>Realistic flight physics and environments</li>
+        <li>Compatible with Meta Quest 2 and VR controllers</li>
+        <li>Haptic feedback and immersive audio</li>
+        <li>Training missions and free-fly mode</li>
+      </ul>
+    </div>
+
+    <div class="section screenshots-section">
+      <h2>VR Screenshots</h2>
+      <div class="screenshot-scroll-wrapper">
+        <div class="screenshot-scroll" id="screenshotContainer">
+          <img src="../images/vr_flight/1.png" alt="Screenshot 1" />
+          <img src="../images/vr_flight/2.png" alt="Screenshot 2" />
+          <img src="../images/vr_flight/3.png" alt="Screenshot 3" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section video-section">
+      <h2>Cutscene Demo</h2>
+      <video src="../Videos/vr_flight.mp4" controls poster="../images/vr_flight/1.png"></video>
+    </div>
+
+    <div class="section">
+      <h2>Tools & Technologies</h2>
+      <ul>
+        <li>Unity (XR Toolkit)</li>
+        <li>Meta Quest 2 SDK</li>
+        <li>Custom flight physics</li>
+        <li>VR input handling and UI</li>
+        <li>3D modeling and animation</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Interested in VR development or similar experiences? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a></p>
+      <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollScreenshots(direction) {
+      const container = document.getElementById("screenshotContainer");
+      const scrollAmount = container.offsetWidth / 2;
+      container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
