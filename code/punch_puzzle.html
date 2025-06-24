@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Punch Puzzle | Harshid Gasil</title>
-  <link rel="stylesheet" href="../code/style.css">
-  <script src="../code/theme-toggle.js" defer></script>
-  <style>
-  
-    .puzzle-header img {
-      width: 80px;
-      height: 80px;
-      border-radius: 12px;
-    }
-    .puzzle-header .header-text {
-      display: flex;
-      flex-direction: column;
-    }
-    .puzzle-header h1 {
-      margin: 0;
-    }
-    .screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .screenshots img {
-      max-width: 300px;
-      border-radius: 8px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punch Puzzle | Harshid Gasil</title>
+    <link rel="stylesheet" href="../code/style.css">
+    <script src="../code/theme-toggle.js" defer></script>
+    <style>
+
+        .puzzle-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+        }
+
+        .puzzle-header .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .puzzle-header h1 {
+            margin: 0;
+        }
+
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .screenshots img {
+            max-width: 300px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
 <header class="puzzle-header">
-  <img src="../images/punch_puzzle.webp" alt="Punch Puzzle Icon">
-  <div class="header-text">
-    <h1>Punch Puzzle</h1>
-    <p>Pattern-based punching game featuring logic and fun interactions</p>
-  </div>
+    <img src="../images/punch_puzzle/icon.webp" alt="Punch Puzzle Icon">
+    <div class="header-text">
+        <h1>Punch Puzzle</h1>
+        <p>Pattern-based punching game featuring logic and fun interactions</p>
+    </div>
 </header>
 
 <div class="container">
-  <div class="section">
-    <h2>Overview</h2>
-    <p>Punch Puzzle is a unique mobile puzzle game where players must figure out patterns and punch mechanisms to solve grid-based challenges. I worked on the logic systems for puzzle generation and win-state detection, and handled transitions and animation polish.</p>
-  </div>
-
-  <div class="section">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Grid-based puzzle solving</li>
-      <li>Simple controls with increasing challenge</li>
-      <li>Pattern recognition mechanics</li>
-      <li>Minimalist animations</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Screenshots</h2>
-    <div class="screenshots">
-      <img src="../images/punch_1.webp" alt="Punch Puzzle Gameplay 1">
-      <img src="../images/punch_2.webp" alt="Punch Puzzle Gameplay 2">
+    <div class="section">
+        <h2>Overview</h2>
+        <p>Punch Puzzle is a unique mobile puzzle game where players must figure out patterns and punch mechanisms to
+            solve grid-based challenges. I worked on the logic systems for puzzle generation and win-state detection,
+            and handled transitions and animation polish.</p>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Tools & Technologies</h2>
-    <ul>
-      <li>Unity (C#)</li>
-      <li>Custom Puzzle Logic</li>
-      <li>State-based Transitions</li>
-    </ul>
-  </div>
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Grid-based puzzle solving</li>
+            <li>Simple controls with increasing challenge</li>
+            <li>Pattern recognition mechanics</li>
+            <li>Minimalist animations</li>
+        </ul>
+    </div>
 
-  <div class="section">
-    <h2>Try It or Learn More</h2>
-    <p>You can check it out on <a href="https://apkcombo.com/punch-puzzle/com.tttgames.punchpuzzle/" target="_blank">APKCombo</a>, or reach out to <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a> for details or collaboration.</p>
-  </div>
+    <div class="section screenshots-section">
+        <h2>UI Screenshots</h2>
+        <div class="screenshot-scroll-wrapper">
+            <div class="screenshot-scroll" id="screenshotContainer">
+                <img src="../images/punch_puzzle/1.webp" alt="Punch Puzzle Gameplay 1">
+                <img src="../images/punch_puzzle/2.webp" alt="Punch Puzzle Gameplay 2">
+                <img src="../images/punch_puzzle/3.webp" alt="Punch Puzzle Gameplay 3">
+                <img src="../images/punch_puzzle/4.webp" alt="Punch Puzzle Gameplay 4">
+                <img src="../images/punch_puzzle/5.webp" alt="Punch Puzzle Gameplay 5">
+                <img src="../images/punch_puzzle/6.webp" alt="Punch Puzzle Gameplay 6">
+            </div>
+        </div>
+    </div>
 
-  <div class="section">
-    <p><a href="../index.html">&larr; Back to Portfolio</a></p>
-  </div>
+    <div class="section">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Custom Puzzle Logic</li>
+            <li>State-based Transitions</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Try It or Learn More</h2>
+        <p>You can check it out on <a href="https://apkcombo.com/punch-puzzle/com.tttgames.punchpuzzle/"
+                                      target="_blank">
+            <g class="link">APKCombo</g>,
+        </a> or reach out to <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a> for details or collaboration.
+        </p>
+    </div>
+
+    <div class="section">
+        <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
 </div>
 
 <footer>
-  <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
 </footer>
 </body>
 </html>

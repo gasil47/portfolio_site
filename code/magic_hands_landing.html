@@ -43,10 +43,8 @@
     </style>
 </head>
 <body>
-<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-
 <header class="header-icon">
-    <img src="../images/magic_hands/icon.png" alt="MagicHands Icon">
+    <img src="../images/magic_hands/magic_hands.png" alt="MagicHands Icon">
     <div class="header-text">
         <h1>MagicHands</h1>
         <p>Third-person magic shooter game made for Crazy Games</p>
@@ -56,7 +54,9 @@
 <div class="container">
     <div class="section">
         <h2>Overview</h2>
-        <p>MagicHands is a third-person shooter where instead of traditional weapons, players wield elemental magic through their hands. Defeat waves of unique enemies using projectiles and abilities while exploring stylized arenas. The game is optimized for web and designed for engaging, fast-paced fun.</p>
+        <p>MagicHands is a third-person shooter where instead of traditional weapons, players wield elemental magic
+            through their hands. Defeat waves of unique enemies using projectiles and abilities while exploring stylized
+            arenas. The game is optimized for web and designed for engaging, fast-paced fun.</p>
     </div>
 
     <div class="section">
@@ -70,12 +70,14 @@
     </div>
 
     <div class="section screenshots-section">
-        <h2>UI Screenshots</h2>
+        <h2>Screenshots</h2>
         <div class="screenshot-scroll-wrapper">
             <div class="screenshot-scroll" id="screenshotContainer">
                 <img src="../images/magic_hands/1.png" alt="Gameplay 1"/>
                 <img src="../images/magic_hands/2.png" alt="Projectile Select"/>
                 <img src="../images/magic_hands/3.png" alt="Combat Area"/>
+                <img src="../images/magic_hands/4.png" alt="Main Menu"/>
+                <img src="../images/magic_hands/5.png" alt="Combat Area"/>
             </div>
         </div>
     </div>
@@ -92,7 +94,8 @@
 
     <div class="section">
         <h2>Contact</h2>
-        <p>Want to discuss this project or a similar idea? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a></p>
+        <p>Want to discuss this project or a similar idea? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>
+        </p>
         <p><a href="../index.html">&larr; Back to Portfolio</a></p>
     </div>
 </div>
@@ -105,7 +108,7 @@
     function scrollScreenshots(direction) {
         const container = document.getElementById("screenshotContainer");
         const scrollAmount = container.offsetWidth / 2;
-        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        container.scrollBy({left: direction * scrollAmount, behavior: 'smooth'});
     }
 </script>
 </body>
