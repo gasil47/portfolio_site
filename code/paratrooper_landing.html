@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paratrooper | Harshid Gasil</title>
+  <link rel="stylesheet" href="../code/style.css" />
+  <script src="../code/theme-toggle.js" defer></script>
+  <style>
+    .paratrooper-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+    }
+
+    .paratrooper-header .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .paratrooper-header h1 {
+      margin: 0;
+    }
+
+    .screenshot-scroll img {
+      height: 300px;
+      width: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      flex-shrink: 0;
+    }
+
+    .video-section video {
+      max-width: 250px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .video-section {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+<header class="paratrooper-header">
+  <img src="../images/paratrooper.png" alt="Paratrooper Icon">
+  <div class="header-text">
+    <h1>Paratrooper</h1>
+    <p>Classic 2D shooter reimagined — inspired by the 1982 original</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="section">
+    <h2>Overview</h2>
+    <p>Paratrooper is a retro-style 2D shooter inspired by the original 1982 game. You must defend your base from waves of descending paratroopers and helicopters using a stationary gun turret. It’s a fast-paced arcade challenge with updated visuals and smooth gameplay tuned for modern devices.</p>
+  </div>
+
+  <div class="section">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Classic arcade-inspired mechanics</li>
+      <li>Pixel-perfect enemy sprites</li>
+      <li>Endless wave survival mode</li>
+      <li>Score tracking with leaderboard</li>
+      <li>Mobile and desktop support</li>
+    </ul>
+  </div>
+
+  <div class="section screenshots-section">
+    <h2>UI Screenshots</h2>
+    <div class="screenshot-scroll-wrapper">
+      <div class="screenshot-scroll" id="screenshotContainer">
+        <img src="../images/paratrooper/1.png" alt="Screenshot 1" />
+        <img src="../images/paratrooper/2.png" alt="Screenshot 2" />
+        <img src="../images/paratrooper/3.png" alt="Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="section video-section">
+    <h2>Demo Video</h2>
+    <video src="../Videos/paratrooper.mp4" controls poster="../images/paratrooper/1.png"></video>
+  </div>
+
+  <div class="section">
+    <h2>Tools & Technologies</h2>
+    <ul>
+      <li>Unity (2D Toolkit)</li>
+      <li>Custom C# Game Loop</li>
+      <li>Pixel Art Sprite Sheets</li>
+      <li>Responsive Input for Desktop & Mobile</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p>Want to discuss this game or a similar retro project? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a></p>
+    <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+</footer>
+
+<script>
+  function scrollScreenshots(direction) {
+    const container = document.getElementById("screenshotContainer");
+    const scrollAmount = container.offsetWidth / 2;
+    container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>

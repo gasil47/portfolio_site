@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Park It Right | Harshid Gasil</title>
+    <link rel="stylesheet" href="../code/style.css"/>
+    <script src="../code/theme-toggle.js" defer></script>
+    <style>
+        .header-icon img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-text h1 {
+            margin: 0;
+        }
+
+        .screenshot-scroll img {
+            height: 300px;
+            width: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            flex-shrink: 0;
+        }
+
+        .video-section video {
+            max-width: 250px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .video-section {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+<header class="header-icon">
+    <img src="../images/park_it_right.png" alt="Park It Right Icon">
+    <div class="header-text">
+        <h1>Park It Right</h1>
+        <p>3D precision car parking game developed in Unity</p>
+    </div>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Overview</h2>
+        <p>Park It Right is a 3D car parking game where players test their precision driving skills. Navigate tight
+            spaces, avoid obstacles, and park perfectly in challenging levels. Inspired by real driving logic, the game
+            is designed to be both relaxing and brain-teasing.</p>
+    </div>
+
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Smooth touch controls for steering and acceleration</li>
+            <li>Multiple levels with increasing difficulty</li>
+            <li>Responsive mobile gameplay</li>
+        </ul>
+    </div>
+
+    <div class="section screenshots-section">
+        <h2>UI Screenshots</h2>
+        <div class="screenshot-scroll-wrapper">
+            <div class="screenshot-scroll" id="screenshotContainer">
+                <img src="../images/park_it_right/1.png" alt="Screenshot 1"/>
+                <img src="../images/park_it_right/2.png" alt="Screenshot 2"/>
+                <img src="../images/park_it_right/3.png" alt="Screenshot 3"/>
+                <img src="../images/park_it_right/4.png" alt="Screenshot 4"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="section video-section">
+        <h2>Demo Video</h2>
+        <video src="../Videos/park_it_right.mp4" controls poster="../images/park_it_right/1.png"></video>
+    </div>
+
+    <div class="section">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>Custom Physics for 3D Car Movement</li>
+            <li>Touch Input System</li>
+            <li>Level Design with progressive logic</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Want to discuss this project or a similar idea? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>
+        </p>
+        <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+</footer>
+
+<script>
+    function scrollScreenshots(direction) {
+        const container = document.getElementById("screenshotContainer");
+        const scrollAmount = container.offsetWidth / 2;
+        container.scrollBy({left: direction * scrollAmount, behavior: 'smooth'});
+    }
+</script>
+</body>
+</html>
