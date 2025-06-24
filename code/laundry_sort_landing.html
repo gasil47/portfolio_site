@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Park It Right | Harshid Gasil</title>
+    <title>Laundry Sort | Harshid Gasil</title>
     <link rel="stylesheet" href="../code/style.css"/>
     <script src="../code/theme-toggle.js" defer></script>
     <style>
@@ -44,27 +44,27 @@
 </head>
 <body>
 <header class="header-icon">
-    <img src="../images/park_it_right.png" alt="Park It Right Icon">
+    <img src="../images/laundry_sort/icon.png" alt="Laundry Sort Icon">
     <div class="header-text">
-        <h1>Park It Right</h1>
-        <p>3D precision car parking game developed in Unity</p>
+        <h1>Laundry Sort</h1>
+        <p>Fun and satisfying laundry sorting puzzle game</p>
     </div>
 </header>
 
 <div class="container">
     <div class="section">
         <h2>Overview</h2>
-        <p>Park It Right is a 3D car parking game where players test their precision driving skills. Navigate tight
-            spaces, avoid obstacles, and park perfectly in challenging levels. Inspired by real driving logic, the game
-            is designed to be both relaxing and brain-teasing.</p>
+        <p>Laundry Sort is a relaxing and addictive puzzle game where players must sort colored clothes into matching baskets. With intuitive drag-and-drop controls, vibrant visuals, and increasingly challenging levels, it's a perfect casual mobile experience.</p>
     </div>
 
     <div class="section">
         <h2>Key Features</h2>
         <ul>
-            <li>Smooth touch controls for steering and acceleration</li>
-            <li>Multiple levels with increasing difficulty</li>
-            <li>Responsive mobile gameplay</li>
+            <li>Simple drag-and-drop gameplay</li>
+            <li>Hundreds of sorting levels</li>
+            <li>Colorful, clean graphics</li>
+            <li>Relaxing background music and sound effects</li>
+            <li>Rewarding animations and game feedback</li>
         </ul>
     </div>
 
@@ -72,33 +72,32 @@
         <h2>UI Screenshots</h2>
         <div class="screenshot-scroll-wrapper">
             <div class="screenshot-scroll" id="screenshotContainer">
-                <img src="../images/park_it_right/1.png" alt="Screenshot 1"/>
-                <img src="../images/park_it_right/2.png" alt="Screenshot 2"/>
-                <img src="../images/park_it_right/3.png" alt="Screenshot 3"/>
-                <img src="../images/park_it_right/4.png" alt="Screenshot 4"/>
+                <img src="../images/laundry_sort/1.png" alt="Screenshot 1"/>
+                <img src="../images/laundry_sort/2.png" alt="Screenshot 2"/>
+                <img src="../images/laundry_sort/3.png" alt="Screenshot 3"/>
+                <img src="../images/laundry_sort/4.png" alt="Screenshot 4"/>
             </div>
         </div>
-    </div>
-
-    <div class="section video-section">
-        <h2>Demo Video</h2>
-        <video src="../Videos/park_it_right.mp4" controls poster="../images/park_it_right/1.png"></video>
     </div>
 
     <div class="section">
         <h2>Tools & Technologies</h2>
         <ul>
             <li>Unity (C#)</li>
-            <li>Custom Physics for 3D Car Movement</li>
-            <li>Touch Input System</li>
-            <li>Level Design with progressive logic</li>
+            <li>Custom 2D animations</li>
+            <li>Mobile touch input system</li>
+            <li>Google Play integration</li>
         </ul>
     </div>
 
     <div class="section">
+        <h2>Play Now</h2>
+        <p><a href="https://play.google.com/store/apps/details?id=com.younickgames.laundrysort" target="_blank">Get it on Google Play</a></p>
+    </div>
+
+    <div class="section">
         <h2>Contact</h2>
-        <p>Want to discuss this project or a similar idea? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a>
-        </p>
+        <p>Want to discuss this project or collaborate? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a></p>
         <p><a href="../index.html">&larr; Back to Portfolio</a></p>
     </div>
 </div>
@@ -111,7 +110,7 @@
     function scrollScreenshots(direction) {
         const container = document.getElementById("screenshotContainer");
         const scrollAmount = container.offsetWidth / 2;
-        container.scrollBy({left: direction * scrollAmount, behavior: 'smooth'});
+        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
     }
 </script>
 </body>

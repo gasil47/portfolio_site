@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dragonborne: Knightfall | Harshid Gasil</title>
+  <link rel="stylesheet" href="../code/style.css" />
+  <script src="../code/theme-toggle.js" defer></script>
+  <style>
+    .dragonborne-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+    }
+
+    .dragonborne-header .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dragonborne-header h1 {
+      margin: 0;
+    }
+
+    .screenshot-scroll img {
+      height: 300px;
+      width: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      flex-shrink: 0;
+    }
+
+    .video-section video {
+      max-width: 250px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .video-section {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="dragonborne-header">
+    <img src="../images/dragonborne/icon.png" alt="Dragonborne Icon">
+    <div class="header-text">
+      <h1>Dragonborne: Knightfall</h1>
+      <p>Retro-style 2D action-platformer inspired by classic knight adventures</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Overview</h2>
+      <p>Dragonborne: Knightfall is a pixel-art 2D action-platformer game where you play as a brave knight battling dragons, monsters, and traps in a fallen kingdom. With smooth combat, classic sword mechanics, and an epic chiptune soundtrack, it pays homage to retro classics while delivering modern polish.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Satisfying hack-and-slash combat with sword & magic</li>
+        <li>Multiple enemy types and boss fights</li>
+        <li>Retro visuals and atmospheric chiptune soundtrack</li>
+        <li>Classic level design with secrets and platforming</li>
+      </ul>
+    </div>
+
+    <div class="section screenshots-section">
+      <h2>UI Screenshots</h2>
+      <div class="screenshot-scroll-wrapper">
+        <div class="screenshot-scroll" id="screenshotContainer">
+          <img src="../images/dragonborne/1.png" alt="Screenshot 1"/>
+          <img src="../images/dragonborne/2.png" alt="Screenshot 2"/>
+          <img src="../images/dragonborne/3.png" alt="Screenshot 3"/>
+          <img src="../images/dragonborne/4.png" alt="Screenshot 4"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="section video-section">
+      <h2>Demo Video</h2>
+      <video src="../Videos/dragonborne.mp4" controls poster="../images/dragonborne/1.png"></video>
+    </div>
+
+    <div class="section">
+      <h2>Tools & Technologies</h2>
+      <ul>
+        <li>Unity (C#)</li>
+        <li>Pixel-art sprite animation</li>
+        <li>Chiptune BGM and SFX</li>
+        <li>Custom character controller</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Want to collaborate or learn more about this game? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a></p>
+      <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollScreenshots(direction) {
+      const container = document.getElementById("screenshotContainer");
+      const scrollAmount = container.offsetWidth / 2;
+      container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
