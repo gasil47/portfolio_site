@@ -8,17 +8,6 @@
   <script src="../code/theme-toggle.js" defer></script>
   <link rel="icon" type="image/png" href="../images/favicon.ico" />
   <style>
-    /*  header.go-header {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin: 40px auto 20px;
-        max-width: 700px;
-        flex-wrap: wrap;
-        border-radius: 12px;
-        background-color: var(--section-bg);
-        padding: 20px;
-      }*/
     .go-header img {
       width: 80px;
       height: 80px;
@@ -45,7 +34,7 @@
 </head>
 <body>
 <header class="go-header">
-  <img src="../images/go_climb.webp" alt="Go Climb Icon" />
+  <img src="../images/go_climb/icon.webp" alt="Go Climb Icon" />
   <div class="header-text">
     <h1>Go Climb</h1>
     <p>Vertical runner challenge with physics-based climbing mechanics</p>
@@ -70,12 +59,22 @@
     </ul>
   </div>
 
-  <div class="section">
-    <h2>Screenshots</h2>
-    <div class="screenshots">
-      <img src="../images/go_1.webp" alt="Go Climb Gameplay 1" />
-      <img src="../images/go_2.webp" alt="Go Climb Gameplay 2" />
+  <div class="section screenshots-section">
+    <h2>UI Screenshots</h2>
+    <div class="screenshot-scroll-wrapper">
+      <div class="screenshot-scroll" id="screenshotContainer">
+        <img src="../images/go_climb/1.png" alt="Punch Puzzle Gameplay 1">
+        <img src="../images/go_climb/2.png" alt="Punch Puzzle Gameplay 2">
+        <img src="../images/go_climb/3.png" alt="Punch Puzzle Gameplay 3">
+        <img src="../images/go_climb/4.png" alt="Punch Puzzle Gameplay 4">
+        <img src="../images/go_climb/5.png" alt="Punch Puzzle Gameplay 5">
+      </div>
     </div>
+  </div>
+
+  <div class="section video-section">
+    <h2>Gameplay Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NtddpXh1msg?si=pOnmvLXaTctFOQ1T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
   <div class="section">
