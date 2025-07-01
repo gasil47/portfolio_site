@@ -1,6 +1,6 @@
 :root {
     --bg: #0f2027;
-    --fg: #e0f7ff;
+    --fg: white/*#e0f7ff*/;
     --section-bg: rgba(255, 255, 255, 0.05);
     --card-bg: rgba(255, 255, 255, 0.1);
     --link-color: #82e9ff;
