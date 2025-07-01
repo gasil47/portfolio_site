@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Trifold Controller | Harshid Gasil</title>
+    <link rel="stylesheet" href="../code/style.css"/>
+    <script src="../code/theme-toggle.js" defer></script>
+    <style>
+        .header-icon img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-text h1 {
+            margin: 0;
+        }
+
+        .screenshot-scroll img {
+            height: 300px;
+            width: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            flex-shrink: 0;
+        }
+
+        .video-section video {
+            max-width: 250px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .video-section {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header class="header-icon">
+    <img src="../images/trifold_display/icon.png" alt="Trifold Icon">
+    <div class="header-text">
+        <h1>Trifold Controller</h1>
+        <p>Interactive animation + content controller for trifold LED displays</p>
+    </div>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Overview</h2>
+        <p>The Trifold Controller is a desktop app designed to control large kinetic LED trifold displays. It can trigger animation states, control Resolume via OSC, and even respond to RF remote inputs through a serial COM port. Built for real-time stage performances, events, and installations.</p>
+    </div>
+
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Trigger multiple trifold display animations</li>
+            <li>Send OSC messages to Resolume to control visual content</li>
+            <li>Read COM port input for remote RF control</li>
+            <li>Real-time responsive feedback and sync</li>
+            <li>User-friendly UI for quick scene selection</li>
+        </ul>
+    </div>
+
+<!--    <div class="section screenshots-section">
+        <h2>UI Screenshots</h2>
+        <div class="screenshot-scroll-wrapper">
+            <div class="screenshot-scroll" id="screenshotContainer">
+                <img src="../images/trifold/1.png" alt="Screenshot 1"/>
+                <img src="../images/trifold/2.png" alt="Screenshot 2"/>
+                <img src="../images/trifold/3.png" alt="Screenshot 3"/>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="section video-section">
+        <h2>Demo Video</h2>
+        <video src="../Videos/trifold.mp4" controls poster="../images/trifold/1.png"></video>
+    </div>
+
+    <div class="section">
+        <h2>Tools & Technologies</h2>
+        <ul>
+            <li>Unity (C#)</li>
+            <li>OSC Protocol (Open Sound Control)</li>
+            <li>Serial Communication for COM Port</li>
+            <li>Custom animation system</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Want to discuss this project or something similar? Email <a href="mailto:harshidgz@gmail.com">harshidgz@gmail.com</a></p>
+        <p><a href="../index.html">&larr; Back to Portfolio</a></p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Harshid Gasil. All rights reserved.</p>
+</footer>
+
+<!--<script>
+    function scrollScreenshots(direction) {
+        const container = document.getElementById("screenshotContainer");
+        const scrollAmount = container.offsetWidth / 2;
+        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+</script>-->
+</body>
+</html>
