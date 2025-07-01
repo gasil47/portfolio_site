@@ -120,9 +120,11 @@ header h1 {
 
 footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 1px 1px;
     background-color: var(--footer-bg);
-    color: var(--fg);
+    font-size: 10px;
+    color: #ffffff4d;
+
 }
 
 a {
