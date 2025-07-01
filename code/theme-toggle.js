@@ -1,3 +1,4 @@
+/*
 function setTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
@@ -19,3 +20,4 @@ window.addEventListener("DOMContentLoaded", () => {
         setTheme(prefersDark ? "dark" : "light");
     }
 });
+*/
